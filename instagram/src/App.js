@@ -3,7 +3,7 @@ import './App.css';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCompass, faHeart, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faCompass, faHeart, faUserCircle } from '@fortawesome/free-regular-svg-icons';
 
 import dummyData from './dummy-data.js';
 
