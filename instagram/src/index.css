@@ -48,6 +48,11 @@ table {
 }
 /* end reset */
 
+/* font-sizing */
+html {
+	font-size: 100%;
+}
+
 /* default CRA styles */
 body {
   margin: 0;
@@ -56,7 +61,9 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	/* make body min size */
+	min-height: 60vh;
 }
 
 code {

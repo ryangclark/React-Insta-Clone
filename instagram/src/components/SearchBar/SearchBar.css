@@ -1,0 +1,7 @@
+.search-bar {
+    grid-column: 2 / -2;
+}
+
+h1 {
+    font-size: 2rem;
+}
