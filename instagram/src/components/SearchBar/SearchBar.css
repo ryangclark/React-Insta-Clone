@@ -19,6 +19,15 @@ img {
 }
 
 .search-bar {
+    align-items: center;
+    display: flex;
     grid-column: 2 / -2;
+    justify-content: space-around;
     margin: 1rem 0;
+}
+
+.fa-compass, .fa-heart, .fa-user-circle {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
 }
