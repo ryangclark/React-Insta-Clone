@@ -1,7 +1,24 @@
-.search-bar {
-    grid-column: 2 / -2;
+.camera-logo {
+    border-right: 1px solid rgba(0,0,0,0.6);
+    max-width: 2rem;
+    /* margin: 0 1rem; */
+    padding: 0 1.5rem 0 1rem;
 }
 
 h1 {
     font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.instagram-logo {
+    max-width: 6rem;
+    padding: 0 1.5rem;
+}
+
+.search-bar {
+    grid-column: 2 / -2;
+    margin: 1rem 0;
 }
