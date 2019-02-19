@@ -1,3 +1,19 @@
 .post-container {
-    grid-column: 2 / -2;
+    grid-column: 3 / -3;
+}
+
+.thumbnail {
+    border-radius: 50%;
+    width: 2rem;
+}
+
+.user-thumb-and-name {
+    align-items: center;
+    display: flex;
+    padding: 1rem 0;
+}
+
+.username {
+    font-weight: bold;
+    padding: 0 1rem;
 }
