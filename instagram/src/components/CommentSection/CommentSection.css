@@ -1,9 +1,27 @@
 .comment {
     display: flex;
+    font-size: 0.9rem;
     padding: 0.5rem 0;
+}
+
+.comment-section {
+    padding: 1rem;
 }
 
 .comment-username {
     font-weight: bold;
     padding-right: 0.5rem;
+}
+
+.like-count {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
+
+.time-posted {
+    color: #999;
+    font-size: 0.75rem;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
 }

@@ -7,21 +7,28 @@ import { faCompass, faHeart, faUserCircle } from '@fortawesome/free-solid-svg-ic
 
 import dummyData from './dummy-data.js';
 
-import PostContainer from './components/PostContainer/PostContainer';
+import PostsContainer from './components/PostsContainer/PostsContainer';
 import SearchBar from './components/SearchBar/SearchBar';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      posts: dummyData
+      posts: []
     }
   }
+
+  componentDidMount() {
+    this.setState({
+      posts: dummyData
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <SearchBar />
-        {this.state.posts.map(post => <PostContainer post={post}/>)}
+        <PostsContainer postList={this.state.posts} />
       </div>
     );
   }
