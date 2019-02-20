@@ -14,8 +14,19 @@ const PostHeader = props => {
 }
 
 PostHeader.propTypes = {
-    thumbnailUrl: PropTypes.string,
-    username: PropTypes.string
+    post: PropTypes.shape({
+        username: PropTypes.string,
+        thumbnailUrl: PropTypes.string,
+        imageUrl: PropTypes.string,
+        likes: PropTypes.number,
+        timestamp: PropTypes.string,
+        comments: PropTypes.arrayOf(
+          PropTypes.shape({
+            username: PropTypes.string,
+            test: PropTypes.string
+          })
+        )
+      })
 };
 
 export default PostHeader;
