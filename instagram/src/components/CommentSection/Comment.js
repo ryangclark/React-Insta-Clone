@@ -5,10 +5,11 @@ import PropTypes from 'prop-types';
 
 const Comment = props => {
     return (
-        <div className="comment">
-            <p className="comment-username">{props.comment.username}</p>
-            <p className="comment-text">{props.comment.text}</p>
-        </div>
+        <p className="comment">
+            <a className="username" href="#">{props.comment.username}</a>
+              {/* Notice the two spaces here */}
+            {props.comment.text}
+        </p>
     );
 }
 

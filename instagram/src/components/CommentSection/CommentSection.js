@@ -24,7 +24,6 @@ const CommentSection = props => {
                     />
                 );
             })}
-            {/* TODO: Make the timestamp say what it needs to */}
             <Timestamp timestamp={props.timestamp} />
         </div>
     );

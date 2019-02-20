@@ -1,22 +1,28 @@
 .comment {
     display: flex;
     font-size: 0.9rem;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
 }
 
 .comment-section {
     padding: 1rem;
 }
 
-.comment-username {
+.comment > .username {
+    color: inherit;
     font-weight: bold;
-    padding-right: 0.5rem;
+    padding: 0 0.5rem 0 0;
+    text-decoration: none;
+}
+
+.comment > .username:hover {
+    text-decoration: underline;
 }
 
 .like-count {
     font-size: 0.9rem;
     font-weight: bold;
-    padding: 0.5rem 0;
+    padding: 1rem 0 0.75rem;
 }
 
 .timestamp {
