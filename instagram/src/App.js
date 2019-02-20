@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import PostsContainer from './components/PostsContainer/PostsPage';
+import authenticate from './authentication/authenticate';
 import PostsPage from './components/PostsContainer/PostsPage';
 
 class App extends Component {
@@ -19,4 +19,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default authenticate(App);

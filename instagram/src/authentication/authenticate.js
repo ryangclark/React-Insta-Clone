@@ -1,4 +1,4 @@
-// import React, { component } from 'react';
+import React, { component } from 'react';
 
 const authenticate = App =>
     class extends React.Component {
@@ -6,3 +6,5 @@ const authenticate = App =>
             return <App />;
         }
     };
+
+export default authenticate;

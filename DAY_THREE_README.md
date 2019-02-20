@@ -29,7 +29,7 @@
   - Create a directory called `authentication`
   - Inside that directory create a HOC called `authenticate`. This is where all of the magic is going to happen.
   - This component should be able to take in a component as an argument, and it will return a `class` component.
-  - Inside of `authenticate's` render method, you'll want to return the Component that gets passed into it.
+  - Inside of `authenticate`'s render method, you'll want to return the Component that gets passed into it.
   - Be sure to export out this component.
   - Head over to App.js and `import` in our new `authenticate` Higher Order Component and pass in `App`.
   - If this worked right then everything should render as it used to.
