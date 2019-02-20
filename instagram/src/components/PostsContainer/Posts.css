@@ -11,16 +11,21 @@
     grid-column: 3 / -3;
 }
 
-.thumbnail {
-    border-radius: 50%;
-    margin-left: 1rem;
-    width: 2rem;
-}
-
 .post-header {
     align-items: center;
     display: flex;
     padding: 1rem 0;
+}
+
+.posts-page {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) repeat(6, minmax(1rem, 10rem)) minmax(1rem, 1fr);
+}
+
+.thumbnail {
+    border-radius: 50%;
+    margin-left: 1rem;
+    width: 2rem;
 }
 
 .username {

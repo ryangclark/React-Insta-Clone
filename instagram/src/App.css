@@ -1,4 +1,0 @@
-.App {
-  display: grid;
-  grid-template-columns: minmax(1rem, 1fr) repeat(6, minmax(1rem, 10rem)) minmax(1rem, 1fr);
-}

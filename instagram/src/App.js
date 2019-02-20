@@ -1,34 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import dummyData from './dummy-data.js';
-import PostsContainer from './components/PostsContainer/PostsContainer';
-import SearchBar from './components/SearchBar/SearchBar';
+import PostsContainer from './components/PostsContainer/PostsPage';
+import PostsPage from './components/PostsContainer/PostsPage';
 
 class App extends Component {
   constructor() {
     super();
-    this.state = {
-      posts: []
-    }
-  }
-
-  componentDidMount() {
-    this.setState({
-      posts: dummyData
-    });
+    this.state = {}
   }
 
   render() {
     return (
       <div className="App">
-        <SearchBar />
-        <PostsContainer postList={this.state.posts} />
+        <PostsPage />
       </div>
     );
   }
 }
-
-
 
 export default App;
