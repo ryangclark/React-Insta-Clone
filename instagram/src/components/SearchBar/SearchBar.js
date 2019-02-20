@@ -1,8 +1,6 @@
 import React from 'react';
 import './SearchBar.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import CameraLogo from '../../assets/camera-logo.svg';
 import IGLogo from '../../assets/iglogo.png';
 
@@ -19,9 +17,9 @@ const SearchBar = () => {
             </div>
 
             <div className="icon-wrapper">
-                <FontAwesomeIcon icon="compass" />
-                <FontAwesomeIcon icon="heart" />
-                <FontAwesomeIcon icon="user-circle" />
+                <i className="far fa-compass" />
+                <i className="far fa-heart" />
+                <i className="far fa-user-circle" />
             </div>
         </header>
     );

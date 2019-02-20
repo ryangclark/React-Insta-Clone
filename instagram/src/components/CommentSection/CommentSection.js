@@ -1,17 +1,12 @@
 import React from 'react';
 import './CommentSection.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 const CommentSection = props => {
     return (
         <div className="comment-section">
             {/* TODO: Fix these icons */}
             {/* TODO: Allow user to toggle like button */}
-            <FontAwesomeIcon icon="heart" />
-            <FontAwesomeIcon icon="heart" />
-            <FontAwesomeIcon icon="heart" />
-            {/* <FontAwesomeIcon icon="heart" style="align: right"/> */}
+            <i className="far fa-heart" />
             {/* TODO: Have `like-count` reflect user's like input */}
             <p className="like-count">{props.post.likes} likes</p>
             {/* TODO: Refactor comment to its own component */}
@@ -24,6 +19,7 @@ const CommentSection = props => {
                     </div>
                 );
             })}
+            {/* TODO: Make the timestamp say what it needs to */}
             <p className="time-posted">{props.post.timestamp}</p>
         </div>
     );

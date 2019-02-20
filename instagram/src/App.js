@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCompass, faHeart, faUserCircle } from '@fortawesome/free-solid-svg-icons';
-
 import dummyData from './dummy-data.js';
 
 import PostsContainer from './components/PostsContainer/PostsContainer';
@@ -33,8 +29,5 @@ class App extends Component {
     );
   }
 }
-
-// FontAwesome stuff
-library.add(faCompass, faHeart, faUserCircle);
 
 export default App;
