@@ -1,11 +1,14 @@
 import React from 'react';
 import './CommentSection.css';
 
+import moment from 'moment';
 import PropTypes from 'prop-types';
 
 const Timestamp = props => {
     return (
-        <p className="timestamp">{props.timestamp}</p>
+        <p className="timestamp">
+            {moment(props.timestamp, 'MMMM Do YYYY hh:mm:ss a').fromNow()}
+        </p>
     );
 }
 
