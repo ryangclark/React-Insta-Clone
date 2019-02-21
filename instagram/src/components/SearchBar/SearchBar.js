@@ -1,28 +1,35 @@
 import React from 'react';
 import './SearchBar.css';
 
-import CameraLogo from '../../assets/camera-logo.svg';
-import IGLogo from '../../assets/iglogo.png';
+import { CameraLogo } from '../StyledComponents/CameraLogo';
+import { FontAwesomeIcon } from '../StyledComponents/FontAwesomeIcon';
+import { InstagramLogo } from '../StyledComponents/InstagramLogo';
+import { SearchHeader } from '../StyledComponents/SearchHeader';
 
 const SearchBar = props => {
     console.log(props.revokeAuthentication);
     return (
-        <header className="search-bar">
+        <SearchHeader>
             <div className="logo-wrapper">
-                <img alt="camera logo" className="camera-logo" src={CameraLogo} />
-                <img alt="Instagram Logo" className="instagram-logo" src={IGLogo} />
+                <CameraLogo />
+                {/* <img alt="camera logo" className="camera-logo" src={CameraLogo} /> */}
+                <InstagramLogo />
+                {/* <img alt="Instagram Logo" className="instagram-logo" src={IGLogo} /> */}
             </div>
-            <div className="search-bar-wrapper">
+            <div> {/* className="search-bar-wrapper" */}
                 {/* TODO: Search input should filter results */}
-                <input className="search-input" placeholder="Search" />
+                <input placeholder="Search" /> {/* className="search-input" */}
             </div>
 
-            <div className="icon-wrapper">
-                <i className="far fa-compass" />
-                <i className="far fa-heart" />
-                <i className="far fa-user-circle" onClick={props.revokeAuthentication} />
-            </div>
-        </header>
+            <nav> {/* className="icon-wrapper" */}
+                <FontAwesomeIcon className="far fa-compass" />
+                <FontAwesomeIcon className="far fa-heart" />
+                <FontAwesomeIcon className="far fa-user-circle" />
+                {/* <i className="far fa-compass" /> */}
+                {/* <i className="far fa-heart" /> */}
+                {/* <i className="far fa-user-circle" onClick={props.revokeAuthentication} /> */}
+            </nav>
+        </SearchHeader>
     );
 }
 

@@ -6,9 +6,9 @@ import Login from './components/Login/Login';
 import PostsPage from './components/PostsContainer/PostsPage';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+    // super(props);
+  // }
 
   render() {
     return (
