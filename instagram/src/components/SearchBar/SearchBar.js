@@ -4,7 +4,8 @@ import './SearchBar.css';
 import CameraLogo from '../../assets/camera-logo.svg';
 import IGLogo from '../../assets/iglogo.png';
 
-const SearchBar = () => {
+const SearchBar = props => {
+    console.log(props.revokeAuthentication);
     return (
         <header className="search-bar">
             <div className="logo-wrapper">
@@ -19,7 +20,7 @@ const SearchBar = () => {
             <div className="icon-wrapper">
                 <i className="far fa-compass" />
                 <i className="far fa-heart" />
-                <i className="far fa-user-circle" />
+                <i className="far fa-user-circle" onClick={props.revokeAuthentication} />
             </div>
         </header>
     );

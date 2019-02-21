@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const Comment = props => {
     return (
         <p className="comment">
-            <a className="username" href="#">{props.comment.username}</a>
+            <span className="username" href="#">{props.comment.username}</span>
               {/* Notice the two spaces here */}
             {props.comment.text}
         </p>

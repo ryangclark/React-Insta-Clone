@@ -5,8 +5,8 @@ import PostsContainer from './PostsContainer';
 import SearchBar from '../SearchBar/SearchBar';
 
 class PostsPage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       posts: []
     }
@@ -21,7 +21,7 @@ class PostsPage extends Component {
   render() {
     return (
       <div className="posts-page">
-        <SearchBar />
+        <SearchBar revokeAuthentication={this.props.revokeAuthentication} />
         <PostsContainer postList={this.state.posts} />
       </div>
     );
