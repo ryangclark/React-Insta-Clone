@@ -1,0 +1,8 @@
+.App > .login-page {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) repeat(6, minmax(1rem, 10rem)) minmax(1rem, 1fr);
+}
+
+.login-page > .login-wrapper {
+    grid-column: 3 / -3;
+}
